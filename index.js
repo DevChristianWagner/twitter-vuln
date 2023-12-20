@@ -1,8 +1,8 @@
 const express = require('express')
 
-const app = express;
+const app = express();
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     if (req.headers["user-agent"].includes("Twitterbot")) {
         res.setHeader("Location", "https://x.ai");
 
