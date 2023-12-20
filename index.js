@@ -11,3 +11,5 @@ app.get('/', (req, res) => {
 
     res.redirect(301, "https://chat.openai.com");
 })
+
+app.listen(3000)
