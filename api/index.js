@@ -4,7 +4,6 @@ const app = express();
 app.get("/", (req, res) => {
     if (req.headers["user-agent"].includes("Twitterbot")) {
         res.setHeader("Location", "https://x.ai");
-        res.redirect(200, "https://x.ai");
 
         return;
     }
